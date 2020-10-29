@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
