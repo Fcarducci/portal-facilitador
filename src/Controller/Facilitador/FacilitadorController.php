@@ -11,11 +11,11 @@ class FacilitadorController extends AbstractController
 {
 
   /**
-   * @Route("/hola", name = "homepage")
+   * @Route("/", name = "homepage")
    */
 
    public function home()
    {
-    return new Response("<h1>Tibeia</h1>");
+    return $this->render("portal-facilitador/home.html.twig", []);
    }
 }
