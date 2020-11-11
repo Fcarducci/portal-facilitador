@@ -2,7 +2,22 @@
 
 {% block content %}
 <section class="first-section">
- <header class="header"><img class="" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni"></header>
+ <header class="header">
+ <div class="rrss-container">
+  <div>
+    <a href="https://linkedin.com"><i  class="rrss fab fa-linkedin"></i></a>
+    <a href="https://twitter.com"><i class="rrss fab fa-twitter-square"></i></a>
+    <a href="https://facebook.com"><i class="rrss fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com"><i class="rrss fab fa-instagram"></i></a>
+  </div>
+  <div class="idioma-container">
+    <a class="border-right-idioma idiomas"href="#">ESP</a>
+    <a class="idiomas"href="#">ENG</a>
+  </div>
+ </div>
+ <hr class="linea">
+ <img class="" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
+ </header>
  <div class="title-container">
   <h2 class="title">Portal del mentor</h2>
   <p class="description-portal">El espacio de formación, oportunidades e intercambio de conocimientos de los mentores de GA</p>
@@ -16,63 +31,124 @@
   <div class="mensaje-ceo-container">
     <div class="bloque-mensaje">
       <h2 class="titulo-mensaje-ceo">MENSAJE DEL CEO</h2>
-      <p class="ceo-texto">Revolución tecnológica, globalización de la economía y una educación de calidad. Estos son los tres pilares de mi vida profesional y lo que me llevó a fundar Global Alumni en su momento.</p>
-      <p class="ceo-texto">Teníamos por delante la tarea de acercar el conocimiento de las mejores universidades del mundo a profesionales de cualquier otro rincón, y lo hemos conseguido. Diseñamos, elaboramos y distribuimos programas de posgrado en español, inglés y portugués, los idiomas más hablados en el mundo, tanto en formato online como semipresencial.</p>
+      <p class="ceo-texto">Pablo Rivas ha condensado en un libro todos sus años de experiencia al frente de Global Alumni y su visión sobre la transformación que está experimentando el sector de la educación.</p>
     </div>
   </div>
 </div>
 
 <section class="universidades-1">
-  <h2 class="titulo-universidades">ACCEDE AL CAMPUS DE FORMACIÓN DE TU UNIVERSIDAD</h2>
+  <h2 class="titulo-universidades">Accede al campus de formación de tu universidad</h2>
   <figure class="img-univ-container">
-   <a target="_blank" href="https://chicagobooth.globalalumni.org/home/"><img class="logo-universidad" src="{{asset("assets/images/universidades/Chicago-Booth-Executive-Education-logo-background.png")}}" alt="Chicago Booth"></a>
 
-   <a target="_blank" href="https://online.esade.edu/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-Esade-blanco.png")}}" alt="Esade"></a>
+   <a class="nombre-universidad" target="_blank" href="http://spanishcourses.xpro.mit.edu:18010/home/">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/mitx-pro-logo 1.png")}}" alt="MIT xPRO">
+    <p class="nombre-universidad">MIT XPRO</p>
+   </a>
 
-   <a target="_blank" href="https://professionalprograms.mit.edu/es/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-MIT-PE.png")}}" alt="MIT Professional Education"></a>
+   <a class="nombre-universidad" target="_blank" href="https://www.mitpeonline.com/login/canvas">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-MIT-PE-icono 1.png")}}" alt="MIT Professional Education">
+    <p class="nombre-universidad">MIT PE</p>
+   </a>
 
-   <a target="_blank" href="https://customprograms.globalalumni.org/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-UCLA-Extension-blanco.png")}}" alt="UCLA"></a>
+   <a class="nombre-universidad" target="_blank" href="https://www.uchicagodigital.com/login/canvas">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/UChicago-phoenix-white 1.png")}}" alt="Universidad de Chicago">
+    <p class="nombre-universidad">Chicago</p>
+   </a>
 
-   <a target="_blank" href="https://berkeleyextension.globalalumni.org"><img class="logo-universidad" src="{{asset("assets/images/universidades/UC-Berkeley-Extension-logo-blanco.png")}}" alt="UC Berkeley"></a>
+   <a class="nombre-universidad" target="_blank" href="https://www.boothexedonline.com/login/canvas">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/Chicago-Booth-Executive-Education-stacked-logo 1.png")}}" alt="Chicago Booth">
+    <p class="nombre-universidad">Chicago Booth</p>
+   </a>
+
+   <a class="nombre-universidad" target="_blank" href="https://berkeleyextensiononline.com/login/canvas">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/UC-Berkeley-sello 1.png")}}" alt="UC Berkeley">
+    <p class="nombre-universidad">UC Berkeley</p>
+   </a>
+
   </figure>
+
   <figure class="img-univ-container">
-   <a target="_blank" href="https://online.professional.uchicago.edu/es/"><img class="logo-universidad" src="{{asset("assets/images/universidades/UChicago-logo-white.png")}}" alt="Universidad de Chicago"></a>
-   <a target="_blank" href="https://www.universidad-online-uees.com/"><img class="logo-universidad" src="{{asset("assets/images/universidades/UEES-logo-horizontal.png")}}" alt="UEES"></a>
-   <a target="_blank" href="https://usilmiami.com/"><img class="logo-universidad" src="{{asset("assets/images/universidades/USIL-logo.png")}}" alt="USIL"></a>
-   <a target="_blank" href="https://spanish.xpro.mit.edu/"><img class="logo-universidad" src="{{asset("assets/images/universidades/xPRO-logo-blanco.png")}}" alt="MIT xPRO"></a>
-  </figure>
-</section>
 
+   <a class="nombre-universidad" target="_blank" href="https://online.esade.edu/">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-Esade 1.png")}}" alt="Esade">
+    <p class="nombre-universidad">ESADE</p>
+   </a>
 
-<section class="universidades-2">
-  <h2 class="titulo-universidades">NUESTRAS UNIVERSIDADES</h2>
-  <figure class="img-univ-container">
-   <a target="_blank" href="https://chicagobooth.globalalumni.org/home/"><img class="logo-universidad" src="{{asset("assets/images/universidades/Chicago-Booth-Executive-Education-logo-background.png")}}" alt="Chicago Booth"></a>
+   <a class="nombre-universidad" target="_blank" href="https://www.universidad-online-uees.com/">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/UEES-logo 1.png")}}" alt="UEES">
+    <p class="nombre-universidad">UEES</p>
+   </a>
 
-   <a target="_blank" href="https://online.esade.edu/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-Esade-blanco.png")}}" alt="Esade"></a>
+   <a class="nombre-universidad" target="_blank" href="https://usilmiami.com/">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/USIL-logo 1.png")}}" alt="USIL">
+    <p class="nombre-universidad">USIL</p>
+   </a>
 
-   <a target="_blank" href="https://professionalprograms.mit.edu/es/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-MIT-PE.png")}}" alt="MIT Professional Education"></a>
+   <a class="nombre-universidad" target="_blank" href="https://customprograms.globalalumni.org/">
+    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-UCLA-Extension.png")}}" alt="UCLA">
+    <p class="nombre-universidad">UCLA</p>
+   </a>
 
-   <a target="_blank" href="https://customprograms.globalalumni.org/"><img class="logo-universidad" src="{{asset("assets/images/universidades/logo-UCLA-Extension-blanco.png")}}" alt="UCLA"></a>
-
-   <a target="_blank" href="https://berkeleyextension.globalalumni.org"><img class="logo-universidad" src="{{asset("assets/images/universidades/UC-Berkeley-Extension-logo-blanco.png")}}" alt="UC Berkeley"></a>
-  </figure>
-  <figure class="img-univ-container">
-   <a target="_blank" href="https://online.professional.uchicago.edu/es/"><img class="logo-universidad" src="{{asset("assets/images/universidades/UChicago-logo-white.png")}}" alt="Universidad de Chicago"></a>
-   <a target="_blank" href="https://www.universidad-online-uees.com/"><img class="logo-universidad" src="{{asset("assets/images/universidades/UEES-logo-horizontal.png")}}" alt="UEES"></a>
-   <a target="_blank" href="https://usilmiami.com/"><img class="logo-universidad" src="{{asset("assets/images/universidades/USIL-logo.png")}}" alt="USIL"></a>
-   <a target="_blank" href="https://spanish.xpro.mit.edu/"><img class="logo-universidad" src="{{asset("assets/images/universidades/xPRO-logo-blanco.png")}}" alt="MIT xPRO"></a>
   </figure>
 </section>
 
 <section class="oportunidades-anuncios">
-  <div class="tips-oportunidad">
-   <h2>OPORTUNIDADES</h2>
-      <p class="oportunidades">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga, sequi nesciunt nam at, ut accusamus tenetur laborum vel unde corrupti soluta tempore dicta facilis nobis vero ducimus facere id.</p>
+<!-- <div class="border-opt"></div>-->
+  <div class="border-izq border-der tips-oportunidad">
+   <h2 class="title-opt">Oportunidades</h2>
+   <p class="oportunidades">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga, sequi nesciunt nam at, ut accusamus tenetur laborum vel unde corrupti soluta tempore dicta facilis nobis vero ducimus facere id.</p>
+   <a class="leer-mas" href="#">LEER MÁS <i class="flecha fas fa-arrow-right"></i></a>
   </div>
-  <div class="tips-oportunidad">
-   <h2>TIPS Y ANUNCIOS</h2>
+  <div class="border-izq border-der tips-oportunidad">
+   <h2 class="title-opt">Tips y anuncios</h2>
    <p class="tips-anuncios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga, sequi nesciunt nam at, ut accusamus tenetur laborum vel unde corrupti soluta tempore dicta facilis nobis vero ducimus facere id.</p>
+   <a class="leer-mas" href="#">LEER MÁS <i class="flecha fas fa-arrow-right"></i></a>
   </div>
 </section>
+
+<section class="universidades-2">
+  <h2 class="nuestras-univ">Conoce nuestras universidades y programas</h2>
+  <div class="seccion-universidades">
+    <div class="enlaces-univ-container">
+      <a class="encales-univ" target="_blank" href="https://online.professional.uchicago.edu/es/"><i class="fas fa-arrow-right"></i> THE UNIVERSITY OF CHICAGO</a>
+      <a class="encales-univ" target="_blank" href="https://chicagobooth.globalalumni.org/home/"><i class="fas fa-arrow-right"></i> CHICAGO BOOTH</a>
+    </div>
+    <div class="enlaces-univ-container">
+      <a class="encales-univ" target="_blank" href="https://berkeleyextension.globalalumni.org"><i class="fas fa-arrow-right"></i> UC BERKELEY EXTENSION</a>
+      <a class="encales-univ" target="_blank" href="https://www.universidad-online-uees.com/"><i class="fas fa-arrow-right"></i> UEES</a>
+    </div>
+    <div class="enlaces-univ-container">
+      <a class="encales-univ" target="_blank" href="https://spanish.xpro.mit.edu/"><i class="fas fa-arrow-right"></i> MIT XPRO</a>
+      <a class="encales-univ" target="_blank" href="https://online.esade.edu/"><i class="fas fa-arrow-right"></i> ESADE</a>
+    </div>
+    <div class="enlaces-univ-container">
+      <a class="encales-univ" target="_blank" href="https://professionalprograms.mit.edu/es/"><i class="fas fa-arrow-right"></i> MIT PROFESSIONAL EDUCATION</a>
+      <a class="encales-univ" target="_blank" href="https://usilmiami.com/"><i class="fas fa-arrow-right"></i> USIL</a>
+    </div>
+    <div class="enlaces-univ-container">
+      <a class="encales-univ" target="_blank" href="https://customprograms.globalalumni.org/"><i class="fas fa-arrow-right"></i> UCLA EXTENSION</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <img class="footer-img" src="{{asset("assets/images/universidades/Group 37.png")}}" alt="Footer">
+</footer>
+
+<section class="politica-privacidad">
+  <div>
+    <p class="ga">© Global Alumni 2020</p>
+  </div>
+
+  <div>
+    <img class="" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
+  </div>
+
+  <div>
+    <a class="ga border-right"href="#">Politica de privacidad</a>
+    <a class="ga"href="#">Aviso legal</a>
+  </div>
+</section>
+
 {% endblock %}

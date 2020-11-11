@@ -10,24 +10,49 @@ body{
 }
 
 .first-section{
-  background-image: url("../assets/images/imagen-fondo.jpg");
+  background-image: url("../assets/images/imagen-fondo-amarillo.jpg");
   background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
   height: 613px;
   position: relative;
 }
-.first-section:before{
-  content:'';
-	position: absolute;
-  top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.8);
+
+.linea{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rrss{
+  color: #FCD835;
+  margin-right: 12px;
 }
 .header{
-  padding: 3% 3% 3% 10%;
+  padding: 3% 10% 3% 10%;
+}
+
+.rrss-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.idioma-container{
+  margin-left:22px
+}
+
+.idiomas{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.idiomas:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.border-right-idioma{
+  border-right: 1px solid  rgba(255, 255, 255, 0.5);
+  padding-right: 6px;
 }
 
 .title-container{
@@ -50,21 +75,51 @@ body{
   font-weight: 300;
 }
 
-.universidades-1{
-  background-color: rgba(252, 216, 53, 0.7);
-  padding-top: 4%;
-  padding-bottom: 4%;
+.ceo-section{
+  background-color: #FCD835;
+  position: absolute;
+  top: 320px;
+  left: 870px;
+  width: 530px;
+  border-radius: 22px;
+  padding: 70px 6%;
 }
 
-.universidades-2{
-  background-color: #8bcdcd;
+.img-ceo-container{
+ 
+}
+
+.img-ceo{
+  width: 128px;
+  height: 128px;
+  border-radius: 134px;
+  margin-left: calc(50% - 128px/2);
+  margin-top: -50%;
+}
+
+.titulo-mensaje-ceo{
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 21px;
+}
+
+.ceo-texto{
+  margin-top: 44px;
+}
+
+.universidades-1{
+  background-color:#212331;
   padding-top: 4%;
   padding-bottom: 4%;
 }
 
 .titulo-universidades{
-  margin: 0% 0px 2% 0%;
-    text-align: center;
+  margin: 7% 0% 7% 0%;
+  text-align: center;
+  color: #FCD835;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 26px;
 }
 
 .img-univ-container{
@@ -76,10 +131,28 @@ body{
 .logo-universidad{
   width: 198px;
   height: 198px;
-  object-fit: contain;
+  object-fit: scale-down;
   border-radius: 100%;
   border-radius: 50%;
-  background-color: black;
+  background-color: #ffffff;
+}
+
+.logo-universidad:hover{
+  background-color: #FCD835;
+}
+
+.nombre-universidad{
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 24px;
+  text-decoration: none;
+}
+
+.nombre-universidad:hover{
+ text-decoration: none;
 }
 
 .oportunidades-anuncios{
@@ -87,20 +160,133 @@ body{
   justify-content: space-evenly;
   align-items: center;
   padding: 4% 0%;
+  background-color: #EAEAEA;
 }
 
+/*
+.border-opt{
+  width: 455.75px; 
+  height: 404.7px; 
+  background-color: #FCD835; 
+  position: absolute; 
+  top: 0px; 
+  left:0px;
+}
+*/
 .tips-oportunidad{
   width: 30%;
+  background-color: #ffffff;
+  padding: 5% 2%;
+}
+
+.border-izq{
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: linear-gradient(to right, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+}
+/*
+.border-der{
+  border-right: 10px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: linear-gradient(to right, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+}
+*/
+.title-opt{
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
 }
 
 .oportunidades{
-  border: 1px solid #000;
-  padding: 8%;
-  margin-top: 8%;
+  margin: 8% 0%;
 }
 
 .tips-anuncios{
-  border: 1px solid #000;
-  padding: 8%;
-  margin-top: 8%;
+  margin: 8% 0%;
+}
+
+.leer-mas{
+  text-decoration: none;
+  color: black;
+  background-color: #FCD835;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 2% 5%;
+  margin-left: 45%;
+}
+
+.leer-mas:hover{
+  text-decoration: none;
+  color: #FCD835;
+  background-color: black;
+}
+
+.flecha{
+  margin-left: 80px;
+}
+
+.universidades-2{
+  background-color: #FCD835;
+  padding: 5% 12%;
+}
+
+.nuestras-univ{
+  margin-bottom: 48px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 26px;
+}
+
+.seccion-universidades{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enlaces-univ-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.encales-univ{
+  color: #000000;
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.encales-univ:hover{
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-img{
+  width: 100%;
+}
+
+.politica-privacidad{
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 0px;
+}
+
+.ga{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 95.68%;
+  color: #FFFFFF;
+}
+
+.ga:hover{
+  color: #FFFFFF;
+}
+
+.border-right{
+  border-right: 1px solid white;
+  padding-right: 6px;
 }
