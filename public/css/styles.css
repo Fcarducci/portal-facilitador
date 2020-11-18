@@ -15,6 +15,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
   height: 613px;
+  width: 100%;
   position: relative;
 }
 
@@ -79,7 +80,7 @@ body{
   background-color: #FCD835;
   position: absolute;
   top: 320px;
-  left: 870px;
+  left: 60%;
   width: 530px;
   border-radius: 22px;
   padding: 70px 6%;
@@ -111,6 +112,7 @@ body{
   background-color:#212331;
   padding-top: 4%;
   padding-bottom: 4%;
+  width: 100%;
 }
 
 .titulo-universidades{
@@ -129,8 +131,8 @@ body{
 }
 
 .logo-universidad{
-  width: 198px;
-  height: 198px;
+  width: 155px;
+  height: 155px;
   object-fit: scale-down;
   border-radius: 100%;
   border-radius: 50%;
@@ -161,6 +163,7 @@ body{
   align-items: center;
   padding: 4% 0%;
   background-color: #EAEAEA;
+  width: 100%;
 }
 
 /*
@@ -183,6 +186,12 @@ body{
   border: 10px solid transparent;
   border-image: linear-gradient(to bottom, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
   border-image: linear-gradient(to right, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -moz-linear-gradient(top, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -moz-linear-gradient(left, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -webkit-linear-gradient(top, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -webkit-linear-gradient(left, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -o-linear-gradient(top, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
+  border-image: -o-linear-gradient(left, rgba(252,216,53,1) -0%,rgba(252,216,53,1) 50%, rgba(252,216,53,0) 51%) 1;
 }
 /*
 .border-der{
@@ -228,7 +237,8 @@ body{
 
 .universidades-2{
   background-color: #FCD835;
-  padding: 5% 12%;
+  padding: 5% 10%;
+  width: 100%;
 }
 
 .nuestras-univ{
@@ -256,6 +266,7 @@ body{
   border-bottom: 1px solid black;
   width: 100%;
   margin-bottom: 22px;
+  margin-right: 6px;
 }
 
 .encales-univ:hover{
@@ -273,6 +284,7 @@ body{
   justify-content: space-around;
   align-items: center;
   padding: 18px 0px;
+  width: 100%;
 }
 
 .ga{
@@ -289,4 +301,391 @@ body{
 .border-right{
   border-right: 1px solid white;
   padding-right: 6px;
+}
+
+.footer{
+ background-color: black;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 12px 0px;
+ width: 100%;
+}
+
+.ciudad-img{
+  margin-bottom: 20px;
+  height: 111px;
+  width: min-content;
+}
+
+.ciudad-nombre{
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.ciudad-direccion{
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/*MEDIA QUERYS*/
+/*VERSION TABLET*/
+@media (max-width: 1024px) {
+  .first-section{
+    background-image: url("../assets/images/imagen-fondo-amarillo.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 613px;
+    position: relative;
+  }
+  
+  .linea{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .rrss{
+    color: #FCD835;
+    margin-right: 12px;
+  }
+  .header{
+    padding: 3% 10% 3% 10%;
+  }
+  
+  .rrss-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .idioma-container{
+    margin-left:22px
+  }
+  
+  .idiomas{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .idiomas:hover{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .border-right-idioma{
+    border-right: 1px solid  rgba(255, 255, 255, 0.5);
+    padding-right: 6px;
+  }
+  
+  .title-container{
+    margin-top: 12px;
+    margin-left: 10%;
+  }
+
+  .title{
+    font-size: 32px;
+  }
+  
+  .description-portal{
+    font-size: 25px;
+    width: 65%;
+  }
+  
+  .ceo-section{
+    top: 724px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 504px;
+  }
+   
+  .img-ceo{
+    width: 128px;
+    height: 128px;
+    border-radius: 134px;
+    margin-left: calc(50% - 128px/2);
+    margin-top: -50%;
+  }
+  
+  .titulo-mensaje-ceo{
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+  }
+  
+  .ceo-texto{
+    margin-top: 44px;
+  }
+  
+  .universidades-1{
+    padding-top: 34%;
+  }
+  
+  .titulo-universidades{
+    font-size: 28px;
+  }
+
+  .img-univ-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .logo-universidad{
+    width: 140px;
+    height: 140px;
+  }
+  
+  .logo-universidad:hover{
+    background-color: #FCD835;
+  }
+  
+  .nombre-universidad{
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 24px;
+    text-decoration: none;
+  }
+  
+  .nombre-universidad:hover{
+   text-decoration: none;
+  }
+  
+  .oportunidades-anuncios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4% 0%;
+    background-color: #EAEAEA;
+  }
+  
+  .tips-oportunidad{
+    width: 45%;
+  }
+  
+  .oportunidades{
+    margin: 8% 0%;
+    font-size: 14px;
+  }
+
+  .title-opt{
+    font-size: 28px;
+  }
+
+  .leer-mas{
+    margin-left: 30%;
+  }
+  
+  .tips-anuncios{
+    margin: 8% 0%;
+    font-size: 14px;
+  }
+  
+  .universidades-2{
+    background-color: #FCD835;
+    padding: 5% 5%;
+  }
+  
+  .nuestras-univ{
+    margin-bottom: 48px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 26px;
+    text-align: center;
+  }
+  
+  .seccion-universidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .enlaces-univ-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .encales-univ{
+    font-size: 14px;
+  }
+  
+  .encales-univ:hover{
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .border-right{
+    border-right: 1px solid white;
+    padding-right: 6px;
+  }
+
+  .ciudad-img {
+    width: 75%;
+    margin-left: 10%;
+    margin-bottom: 4px;
+  }
+  .ciudad-nombre {
+    font-size: 12px;
+  }
+
+  .ciudad-direccion {
+    font-size: 12px;
+  }
+
+  .leer-mas {
+    margin-left: 14%;
+  }
+}
+
+/*VERSION MOBILE*/
+
+@media (max-width: 780px) {
+
+  .ceo-section {
+    top: 720px;
+    width: 438px;
+  }
+
+  .universidades-1 {
+    padding-top: 50%;
+  }
+
+  .politica-privacidad {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .politica-logo-container{
+    margin: 12px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .politica-logo{
+    width: 80%;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .ciudades-container{
+     margin-top: 12px;
+   }
+
+   .ciudad-img{
+     height: auto;
+     width: 258px;
+     margin-left: 0px;
+     margin-bottom: 20px;
+    }
+
+    .oportunidades {
+      font-size: 13px;
+    }
+
+    .tips-anuncios{
+      font-size: 13px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+  .rrss-container {
+    justify-content: center;
+  }
+
+  .GAlogo{
+    margin-left: 8%;
+  }
+
+  .title-container {
+    margin-left: 12%;
+  }
+
+  .description-portal {
+    margin-top: 25px;
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .ceo-section{
+    top: 654px;
+    width: 90%;
+  }
+
+  .ceo-texto {
+    font-size: 14px;
+  }
+
+  .universidades-1 {
+    padding-top: 25%;
+  }
+
+  .titulo-universidades {
+    margin: 44% 0% 7% 0%;
+    line-height: 32px;
+    font-size: 24px;
+  }
+
+  .img-ceo {
+    width: 100px;
+    height: 100px;
+    margin-left: calc(100% - 65%);
+  }
+
+ .oportunidades-anuncios{
+   flex-direction: column;
+  }
+
+  .tips-oportunidad {
+   margin-bottom: 6%;
+   width: 95%;
+  }
+
+  .nuestras-univ {
+    line-height: 32px;
+    font-size: 24px;
+  } 
+
+  .politica-privacidad {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .politica-logo-container{
+    margin: 12px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .politica-logo{
+    width: 80%;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   .ciudades-container{
+     margin-top: 12px;
+   }
+
+   .ciudad-img{
+     height: auto;
+     width: 258px;
+     margin-left: 0px;
+     margin-bottom: 20px;
+    }
 }
