@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+  {{form_start(signupForm, {'attr': { 'class':'form-signin'}})}}
+    {{form_widget(signupForm.nombre, {'attr': { 'class':''}})}}
+    {{form_widget(signupForm.apellido, {'attr': { 'class':''}})}}
+    {{form_widget(signupForm.email, {'attr': { 'class':''}})}}
+    {{form_widget(signupForm.password, {'attr': { 'class':''}})}}
+    {{form_widget(signupForm.roles, {'attr': { 'class':''}})}}
+    <button class="" type="submit">Sign up</button>
+  {{form_end(signupForm)}}
+{% endblock %}

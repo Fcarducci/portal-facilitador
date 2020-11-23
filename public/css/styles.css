@@ -20,7 +20,7 @@ body{
 }
 
 .linea{
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .rrss{
@@ -31,12 +31,39 @@ body{
   padding: 3% 10% 3% 10%;
 }
 
-.rrss-container{
+.bienvenida-container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 
+.logout{
+  color: white;
+  margin-left: 24px;
+}
+
+.logout:hover{
+  color: white;
+}
+
+.bienvenido{
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.rrss-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.logout-container{
+  display: flex;
+  align-items: center;
+}
 .idioma-container{
   margin-left:22px
 }
@@ -57,7 +84,7 @@ body{
 }
 
 .title-container{
-  margin-top: 106px;
+  margin-top: 20px;
   margin-left: 10%;
 }
 .title{
