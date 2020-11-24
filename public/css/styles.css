@@ -25,7 +25,7 @@ body{
 
 .rrss{
   color: #FCD835;
-  margin-right: 22px;
+  margin-right: 28px;
 }
 .header{
   padding: 3% 10% 3% 10%;
@@ -35,10 +35,11 @@ body{
  display: flex;
  justify-content: space-between;
  align-items: center;
+ padding: 0px;
 }
 
 .bienvenida-container{
-  margin-top: 32px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,16 +79,20 @@ body{
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 16px;
-  margin-left: 16px;
+  display: inline;
 }
 
 .idiomas:hover{
   color: rgba(255, 255, 255, 0.5);
 }
 
+#lista li:last-child{
+  padding-top: 7px;
+}
+
 .border-right-idioma{
   border-right: 1px solid  rgba(255, 255, 255, 0.5);
-  padding-right: 14px;
+  padding-right: 8px !important;
 }
 
 .title-container{
@@ -376,9 +381,6 @@ body{
     position: relative;
   }
   
-  .linea{
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
   
   .rrss{
     color: #FCD835;
@@ -422,13 +424,14 @@ body{
     font-size: 32px;
   }
   
-  .description-portal{
-    font-size: 25px;
-    width: 65%;
+  .description-portal {
+    margin-top: 25px;
+    font-size: 22px;
+    width: 82%;
   }
   
   .ceo-section{
-    top: 724px;
+    top: 708px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 504px;
@@ -581,6 +584,12 @@ body{
 
 @media (max-width: 780px) {
 
+  .description-portal {
+    margin-top: 6px;
+    font-size: 21px;
+    width: 85%;
+  }
+
   .ceo-section {
     top: 720px;
     width: 438px;
@@ -639,7 +648,7 @@ body{
   }
 
   .GAlogo{
-    margin-left: 8%;
+   
   }
 
   .title-container {
@@ -653,7 +662,7 @@ body{
   }
 
   .ceo-section{
-    top: 654px;
+    top: 700px;
     width: 90%;
   }
 
