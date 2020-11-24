@@ -4,24 +4,24 @@
 {% if is_granted ('ROLE_USER')%}
 <section class="first-section">
  <header class="header">
-  <img class="GAlogo" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
- <div class="rrss-container">
+ <div class="contenedor-principal">
+   <img class="GAlogo" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
+   <div class="rrss-container">
+      <a href="https://linkedin.com"><i  class="rrss fab fa-linkedin"></i></a>
+      <a href="https://twitter.com"><i class="rrss fab fa-twitter-square"></i></a>
+      <a href="https://facebook.com"><i class="rrss fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com"><i class="rrss fab fa-instagram"></i></a>
+      <a class="border-right-idioma idiomas"href="#">ESP</a>
+      <a class="idiomas"href="#">ENG</a>
+   </div>
+ </div>
+ <div class="bienvenida-container">
     <p class="bienvenido">Hola {{app.user.nombre}} 👋</p>
     <div class="logout-container">
-      <div>
-        <a href="https://linkedin.com"><i  class="rrss fab fa-linkedin"></i></a>
-        <a href="https://twitter.com"><i class="rrss fab fa-twitter-square"></i></a>
-        <a href="https://facebook.com"><i class="rrss fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com"><i class="rrss fab fa-instagram"></i></a>
-      </div>
-      <div class="idioma-container">
-        <a class="border-right-idioma idiomas"href="#">ESP</a>
-        <a class="idiomas"href="#">ENG</a>
         {% if is_granted ('ROLE_ADMIN')%}
          <a class="logout" href='{{path("signup")}}'>Registrar Usuarios</a>
         {% endif %}
         <a class="logout" href='{{path("app_logout")}}'>Logout</a>
-      </div>
     </div>
  </div>
  <hr class="linea">

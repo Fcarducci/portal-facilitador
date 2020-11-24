@@ -25,13 +25,20 @@ body{
 
 .rrss{
   color: #FCD835;
-  margin-right: 12px;
+  margin-right: 22px;
 }
 .header{
   padding: 3% 10% 3% 10%;
 }
 
+.contenedor-principal{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
 .bienvenida-container{
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,9 +62,8 @@ body{
 }
 .rrss-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 42px;
 }
 
 .logout-container{
@@ -72,6 +78,7 @@ body{
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 16px;
+  margin-left: 16px;
 }
 
 .idiomas:hover{
@@ -80,7 +87,7 @@ body{
 
 .border-right-idioma{
   border-right: 1px solid  rgba(255, 255, 255, 0.5);
-  padding-right: 6px;
+  padding-right: 14px;
 }
 
 .title-container{
