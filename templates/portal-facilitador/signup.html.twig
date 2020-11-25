@@ -1,12 +1,19 @@
 {% extends "base.html.twig" %}
 
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href={{asset("css/signin.css")}}>
+{% endblock %}
+
 {% block content %}
+<img class="navbar-brand GAlogo" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
   {{form_start(signupForm, {'attr': { 'class':'form-signin'}})}}
-    {{form_widget(signupForm.nombre, {'attr': { 'class':''}})}}
-    {{form_widget(signupForm.apellido, {'attr': { 'class':''}})}}
-    {{form_widget(signupForm.email, {'attr': { 'class':''}})}}
-    {{form_widget(signupForm.password, {'attr': { 'class':''}})}}
-    {{form_widget(signupForm.roles, {'attr': { 'class':''}})}}
-    <button class="" type="submit">Sign up</button>
+  <h1 style="text-align:center;" class="h3 mb-3 font-weight-normal">Registro de mentores</h1>
+    {{form_widget(signupForm.nombre, {'attr': { 'class':'form-control'}})}}
+    {{form_widget(signupForm.apellido, {'attr': { 'class':'form-control'}})}}
+    {{form_widget(signupForm.email, {'attr': { 'class':'form-control'}})}}
+    {{form_widget(signupForm.password, {'attr': { 'class':'form-control'}})}}
+    {{form_widget(signupForm.roles, {'attr': { 'class':'form-control'}})}}
+    <button class="boton-login btn btn-lg btn-warning btn-block font-weight-bold" type="submit">Resgistrar</button>
   {{form_end(signupForm)}}
 {% endblock %}

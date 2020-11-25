@@ -1,8 +1,14 @@
 {% extends "base.html.twig" %}
 
-{% block content %}
-  {{form_start(signinForm, {'attr': { 'class':'form-signin'}})}}
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href={{asset("css/signin.css")}}>
+{% endblock %}
 
+{% block content %}
+<img class="navbar-brand GAlogo" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
+  {{form_start(signinForm, {'attr': { 'class':'form-signin'}})}}
+   <h1 style="text-align:center;" class="h3 mb-3 font-weight-normal">Por favor ingresa</h1>
 
     {% if error %}
       <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
@@ -13,12 +19,13 @@
         You are logged in as {{ app.user.nombre }}, <a href="{{ path('app_logout') }}">Logout</a>
       </div>
     {% endif %}
-
-    {{form_widget(signinForm.email, {'attr': { 'class':''}})}}
-    {{form_widget(signinForm.password, {'attr': { 'class':''}})}}
-    <input class="form-control" type="checkbox" id="remember_me" name="_remember_me" checked/>
+    
+    {{form_widget(signinForm.email, {'attr': { 'class':'form-control'}})}}
+    {{form_widget(signinForm.password, {'attr': { 'class':'form-control'}})}}
+    <input style='width:auto; margin-right:10px; display: inline' class="form-control" type="checkbox" id="remember_me" name="_remember_me" checked/>
     <label  for="remember_me">Remember me</label>
     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
-    <button class="" type="submit">Log in</button>
+    <button class="boton-login btn btn-lg btn-warning btn-block font-weight-bold" type="submit">Ingresar</button>
+    <p style="text-align: center; margin-top: 1rem!important;" class="mt-5 mb-3 text-muted">&copy; 2020</p>
   {{form_end(signinForm)}}
 {% endblock %}
