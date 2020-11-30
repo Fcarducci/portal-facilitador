@@ -1,6 +1,12 @@
 {% extends "base.html.twig" %}
 
 
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href={{asset("css/op.css")}}>
+{% endblock %}
+
+
 {% block content %}
 <section class="first-section">
  <header class="header">
@@ -45,6 +51,41 @@
  <div class="title-container">
   <h2 class="title">Oportunidades</h2>
   <p class="description-portal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+ </div>
+</section>
+
+<section class="contenedor-oportunidades">
+ <h2 class="nuestras-univ">Nam porttitor, nulla eu consequat laoreet.</h2>
+ <div class="row">
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/01 (1).svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
+
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/02 (1).svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
+
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/03 (1).svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
+
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/04.svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
+
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/05.svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
+
+   <div class="op col-lg-4 col-md-6 col-12">
+   <img src="{{asset("assets/images/oportunidades/05.svg")}}" alt="">
+    <p class="op-description">Nam porttitor, nulla eu consequat laoreet, dui dolor sagittis elit, id consequat ligula diam sit amet neque. Aliquam ornare, sapien ut laoreet tempus, ex ante congue velit, et vehicula tortor dolor vitae erat. In in dolor dapibus, scelerisque erat in, laoreet est.</p>
+   </div>
  </div>
 </section>
 

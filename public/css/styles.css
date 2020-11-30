@@ -14,7 +14,7 @@ body{
   background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-  height: 613px;
+  height: 700px;
   width: 100%;
   position: relative;
 }
@@ -36,6 +36,7 @@ body{
  justify-content: space-between;
  align-items: center;
  padding: 0px;
+ margin-top: 32px;
 }
 
 .bienvenida-container{
@@ -44,6 +45,14 @@ body{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+}
+
+.opciones-menu{
+  color: #FCD835 !important;
+}
+
+.opciones-menu:hover{
+  text-decoration: underline;
 }
 
 .logout{
@@ -61,6 +70,12 @@ body{
   font-weight: bold;
   margin-bottom: 0px;
 }
+.menu-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .rrss-container{
   display: flex;
   justify-content: flex-end;
@@ -80,14 +95,11 @@ body{
   font-size: 14px;
   line-height: 16px;
   display: inline;
+  padding-left: 8px !important;
 }
 
 .idiomas:hover{
   color: rgba(255, 255, 255, 0.5);
-}
-
-#lista li:last-child{
-  padding-top: 7px;
 }
 
 .border-right-idioma{
@@ -118,7 +130,7 @@ body{
 .ceo-section{
   background-color: #FCD835;
   position: absolute;
-  top: 320px;
+  top: 392px;
   left: 60%;
   width: 530px;
   border-radius: 22px;
@@ -386,13 +398,20 @@ body{
     color: #FCD835;
     margin-right: 12px;
   }
+
+  .rrss-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .header{
     padding: 3% 10% 3% 10%;
   }
   
-  .rrss-container{
+  .menu-container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
   }
   
@@ -643,8 +662,8 @@ body{
 
 @media (max-width: 600px) {
 
-  .rrss-container {
-    justify-content: center;
+  .menu-container {
+    justify-content: flex-start;
   }
 
   .GAlogo{
