@@ -1,8 +1,7 @@
 {% extends "base.html.twig" %}
 
-{% block content %}
-{% if is_granted ('ROLE_USER')%}
 
+{% block content %}
 <section class="first-section">
  <header class="header">
  <nav class="contenedor-principal navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -44,87 +43,9 @@
 
  </header>
  <div class="title-container">
-  <h2 class="title">Portal del mentor</h2>
-  <p class="description-portal">El espacio de formación, oportunidades e intercambio de conocimientos de los mentores de GA</p>
+  <h2 class="title">Oportunidades</h2>
+  <p class="description-portal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
  </div>
-</section>
-
-<div class="ceo-section">
-  <figure class="img-ceo-container">
-    <img class="img-ceo" src="{{asset("assets/images/Pablo-Rivas.jpg")}}" alt="Pablo Rivas">
-  </figure>
-  <div class="mensaje-ceo-container">
-    <div class="bloque-mensaje">
-      <h2 class="titulo-mensaje-ceo">MENSAJE DEL CEO</h2>
-      <p class="ceo-texto">Pablo Rivas ha condensado en un libro todos sus años de experiencia al frente de Global Alumni y su visión sobre la transformación que está experimentando el sector de la educación.</p>
-    </div>
-  </div>
-</div>
-
-<section class="universidades-1">
-  <h2 class="titulo-universidades">Accede al campus de formación de tu universidad</h2>
-  <figure class="img-univ-container row">
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="http://spanishcourses.xpro.mit.edu:18010/home/">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/mitx-pro-logo 1.png")}}" alt="MIT xPRO">
-    <p class="nombre-universidad">MIT XPRO</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3 col-sm-6" target="_blank" href="https://www.mitpeonline.com/login/canvas">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-MIT-PE-icono 1.png")}}" alt="MIT Professional Education">
-    <p class="nombre-universidad">MIT PE</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://www.uchicagodigital.com/login/canvas">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/UChicago-phoenix-white 1.png")}}" alt="Universidad de Chicago">
-    <p class="nombre-universidad">Chicago</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://www.boothexedonline.com/login/canvas">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/Chicago-Booth-Executive-Education-stacked-logo 1.png")}}" alt="Chicago Booth">
-    <p class="nombre-universidad">Chicago Booth</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://berkeleyextensiononline.com/login/canvas">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/UC-Berkeley-sello 1.png")}}" alt="UC Berkeley">
-    <p class="nombre-universidad">UC Berkeley</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://online.esade.edu/">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-Esade 1.png")}}" alt="Esade">
-    <p class="nombre-universidad">ESADE</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://www.universidad-online-uees.com/">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/UEES-logo 1.png")}}" alt="UEES">
-    <p class="nombre-universidad">UEES</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3  col-sm-6" target="_blank" href="https://usilmiami.com/">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/USIL-logo 1.png")}}" alt="USIL">
-    <p class="nombre-universidad">USIL</p>
-   </a>
-
-   <a class="nombre-universidad col-lg-3 col-md-4 col-sm-6" target="_blank" href="https://customprograms.globalalumni.org/">
-    <img class="logo-universidad" src="{{asset("assets/images/universidades/logo-UCLA-Extension.png")}}" alt="UCLA">
-    <p class="nombre-universidad">UCLA</p>
-   </a>
-
-  </figure>
-</section>
-
-<section class="oportunidades-anuncios">
-<!-- <div class="border-opt"></div>-->
-  <div class="border-izq border-der tips-oportunidad">
-   <h2 class="title-opt">Oportunidades</h2>
-   <p class="oportunidades">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga, sequi nesciunt nam at, ut accusamus tenetur laborum vel unde corrupti soluta tempore dicta facilis nobis vero ducimus facere id.</p>
-   <a class="leer-mas" href='{{path("oportunidades")}}'>LEER MÁS <i class="flecha fas fa-arrow-right"></i></a>
-  </div>
-  <div class="border-izq border-der tips-oportunidad">
-   <h2 class="title-opt">Tips y anuncios</h2>
-   <p class="tips-anuncios">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero fuga, sequi nesciunt nam at, ut accusamus tenetur laborum vel unde corrupti soluta tempore dicta facilis nobis vero ducimus facere id.</p>
-   <a class="leer-mas" href='{{path("anuncios")}}'>LEER MÁS <i class="flecha fas fa-arrow-right"></i></a>
-  </div>
 </section>
 
 <section class="universidades-2">
@@ -194,13 +115,4 @@
     <a class="ga"href="#">Aviso legal</a>
   </div>
 </section>
-{% else %}
-<div style="height:100vh;" class="jumbotron">
-  <h1 class="display-4">Hola! 👋</h1>
-  <p class="lead">Para acceder a nuestro portal del mentor tienes que ingresar tus credenciales.</p>
-  <hr class="my-4">
-  <p>Por favor, has click en el botón de abajo para acceder ;)</p>
-  <a class="btn btn-warning btn-lg font-weight-bold" href="{{path('app_login')}}" role="button">Ingresar</a>
-</div>
-{% endif %}
 {% endblock %}

@@ -68,4 +68,21 @@ class FacilitadorController extends AbstractController
       return $this->render("portal-facilitador/signup.html.twig", ['signupForm' => $form->createView()]);
     }
 
+    /**
+     * @Route("/oportunidades", name="oportunidades")
+     */
+
+     function opportunity()
+     {
+      return $this->render("portal-facilitador/oportunidades.html.twig");
+     }
+
+    /**
+     * @Route("/anuncios", name="anuncios")
+     */
+
+    function tipsAndAnnouncement()
+    {
+     return $this->render("portal-facilitador/tips-anuncios.html.twig");
+    }
 }
