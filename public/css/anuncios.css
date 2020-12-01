@@ -34,3 +34,20 @@
   color: black;
   margin-left: 1%;
 }
+
+@media (max-width: 600px) {
+
+  .titulo-anuncio{
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .parrafos-anuncios{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .opciones-carousel {
+    padding: 68px 0%;
+  }
+}
