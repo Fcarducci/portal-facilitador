@@ -1,0 +1,36 @@
+.seccion-carousel{
+  margin-bottom: 42px;
+}
+
+.contenedor-carousel{
+  padding: 68px 32px;
+}
+
+.opciones-carousel{
+  width: 86%;
+  padding: 68px 15%;
+  margin: auto;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right,rgba(252,216,53,0) 0%, rgba(252,216,53,0) 5%,rgba(252,216,53,1) 6%, rgba(252,216,53,1) 94%, rgba(252,216,53,0) 95%) 1
+
+}
+
+.titulo-anuncio{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.imagen-carousel{
+  margin-top:32px;
+}
+
+.left{
+  color: black;
+  margin-left: 50%;
+}
+
+.right{
+  color: black;
+  margin-left: 1%;
+}

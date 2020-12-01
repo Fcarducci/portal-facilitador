@@ -10,28 +10,32 @@
 {% block content %}
 <section class="first-section">
  <header class="header">
+ <div class="rrss-container">
+   <a href="https://linkedin.com"><i  class="rrss fab fa-linkedin"></i></a>
+   <a href="https://twitter.com"><i class="rrss fab fa-twitter-square"></i></a>
+   <a href="https://facebook.com"><i class="rrss fab fa-facebook-f"></i></a>
+   <a href="https://instagram.com"><i class="rrss fab fa-instagram"></i></a>
+   <div>
+      <a class="border-right-idioma idiomas"href="#">ESP</a>
+      <a class="idiomas"href="#">ENG</a>
+   </div>
+
+ </div>
  <nav class="contenedor-principal navbar navbar-expand-lg navbar-dark bg-transparent">
   <img class="navbar-brand GAlogo" src="{{asset("assets/images/GlobalAlumni-logotipo.svg")}}" alt="Logo Global Alumni">
   <button id="boton-menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="rrss-container collapse navbar-collapse" id="navbarNav">
+  <div class="menu-container collapse navbar-collapse" id="navbarNav">
     <ul id="lista" class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://linkedin.com"><i  class="rrss fab fa-linkedin"></i></a>
+      <li class="nav-item">
+        <a class="opciones-menu nav-link" href='{{path("homepage")}}'>Portal del mentor</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com"><i class="rrss fab fa-twitter-square"></i></a>
+        <a class="opciones-menu nav-link" href='{{path("oportunidades")}}'>Oportunidades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://facebook.com"><i class="rrss fab fa-facebook-f"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://instagram.com"><i class="rrss fab fa-instagram"></i></a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link border-right-idioma idiomas"href="#">ESP</a>
-         <a class="nav-link idiomas"href="#">ENG</a>
+        <a class="opciones-menu nav-link" href='{{path("anuncios")}}'>Tips y anuncios</a>
       </li>
     </ul>
   </div>
@@ -49,8 +53,8 @@
 
  </header>
  <div class="title-container">
-  <h2 class="title">Oportunidades</h2>
-  <p class="description-portal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h2 class="title">Portal del mentor</h2>
+  <p class="description-portal">El espacio de formación, oportunidades e intercambio de conocimientos de los mentores de GA</p>
  </div>
 </section>
 
